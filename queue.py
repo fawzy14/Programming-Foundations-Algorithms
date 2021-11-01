@@ -1,12 +1,14 @@
-names = []    #queues 
+from collections import deque
 
-names.append('Mahmoud')   # in queues last in, first out
-names.append('Omer')      # in queues first in, last out 
-names.append('Fawzy')
-names.append('Mostafa')
+queue = deque()
 
-print(names)  
+queue.append(1) #add 
+queue.append(2)
+queue.append(3)
+queue.append(4)
 
-remove_name = names.pop()  #abeer will out 
-print(remove_name)
-print(names)
+print(queue)
+                  # in queue fist in fist out 
+x = queue.popleft() #remove # popleft remove the fist item in queue 
+print(x)
+print(queue)
